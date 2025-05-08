@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Stephen Atta Amankwaa | Course landing page with navigation and dynamic content."/>
+  <meta name="author" content="Stephen Atta Amankwaa"/>
+  <title>WDD 131: Dynamic Web Fundamentals - Stephen Atta Amankwaa</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to My Web Page</h1>
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Stephen A. Amankwaa</span></h1>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://byui.instructure.com" target="_blank">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        <li><a href="#" target="_blank">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-card">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>
+          My name is Stephen and I go by Ruby. I was born in Ghana and live with my family in Sunyani. I am currently working as an administrative legal assistant at a law firm. My children are my world and I love spending time with them. I love to travel and I love to learn new things.
+        </p>
+        <img src="images/passport.jpg" alt="My profile photo">
+      </div>
+
+      <section class="location-info">
+        <h3>Sunyani, Ghana</h3>
+        <div class="location-content">
+          <div class="flag">
+            <img src="images/Ghana-flag.jpg" alt="Flag of Ghana">
+            <p class="caption">Official Flag of Ghana</p>
+          </div>
+          <p>
+            Ghana is a country located in West Africa. It is known for its rich culture, vibrant traditions, and historical landmarks like Cape Coast Castle. Ghana’s economy is supported by gold, cocoa, and oil production.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section class="resources-card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+        <li><a href="https://smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+        <li><a href="https://w3schools.com" target="_blank">W3Schools</a></li>
+        <li><a href="https://udemy.com" target="_blank">Udemy</a></li>
+        <li><a href="https://placeholder.com" target="_blank">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Stephen Amankwaa Atta | Ghana</p>
+    <p class="last-modified"></p>
+  </footer>
 </body>
 </html>
