@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Welcome to Stephen Atta Amankwaa's WDD 131 - Temple Album. This page includes navigation, course content, and dynamic features using modern HTML, CSS, and JavaScript."/>
+  <meta name="author" content="Stephen Atta Amankwaa"/>
+  <title>WDD 131: Temple Album - Stephen Atta Amankwaa</title>
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu">☰</button>
+    <nav id="navMenu">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Favorite Temples</h1>
+    <section class="grid">
+      <!-- Placeholder temple figures -->
+      <figure>
+        <img src="images/logan-utah-temple-8239.jpg" alt="Tonga-Temple-1" />
+        <figcaption>Temple 1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/logan-utah-temple.jpeg" alt="Iogan-Temple-2" />
+        <figcaption>Temple 2</figcaption>
+      </figure>
+      <!-- Add at least 9 total -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Your Name | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
