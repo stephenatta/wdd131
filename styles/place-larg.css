@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+    .info {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      max-width: 45%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-top: 0; /* remove mobile margin */
+    }
+  
+    .weather {
+      position: absolute;
+      bottom: 10%;
+      right: 5%;
+      max-width: 300px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-top: 0; /* remove mobile margin */
+    }
+  
+    .weather-icon-mobile {
+      display: none !important;
+    }
+  
+    /* Add weather icon as emoji after weather heading */
+    .weather h2::after {
+      content: " ⛅";
+      font-size: 1.2rem;
+    }
+  }
