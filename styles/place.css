@@ -5,36 +5,6 @@
     --font-color: #333;
   }
   
-  /* Define font families as CSS variables for easy maintenance */
-:root {
-    --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Merriweather', serif;
-  }
-  
-  /* Font family utilities */
-  .font-montserrat {
-    font-family: var(--font-primary);
-    font-optical-sizing: auto;
-    font-style: normal; /* default normal */
-  }
-  
-  .font-merriweather {
-    font-family: var(--font-secondary);
-    font-optical-sizing: auto;
-    font-style: normal; /* default normal */
-  }
-  
-  /* Font weight utilities */
-  .font-weight-100 { font-weight: 100; }
-  .font-weight-300 { font-weight: 300; }
-  .font-weight-400 { font-weight: 400; } /* Normal weight */
-  .font-weight-700 { font-weight: 700; } /* Bold */
-  .font-weight-900 { font-weight: 900; }
-  
-  /* Font style utilities */
-  .font-italic {
-    font-style: italic;
-  }
   
 
   body {
