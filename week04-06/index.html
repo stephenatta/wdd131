@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore traditional African musical instruments and their cultural significance.">
+  <meta name="author" content="Stephen Atta Amankwaa">
+  <title>African Musical Instruments | Home</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/media.css">
+</head>
+
+<body>
+  <header>
+    <h1>African Musical Instruments</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="instruments.html">Instruments</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="African musicians performing" loading="lazy">
+      <div class="hero-text">
+        <h2>Experience the Rhythm of Africa</h2>
+        <p>Discover traditional African instruments and the rich culture behind the music.</p>
+        <a class="cta-button" href="instruments.html">Explore Instruments</a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>Africa is home to a vibrant and diverse musical tradition. From the resonant beat of the djembe to the soothing melodies of the kora, each instrument tells a story of culture and history.</p>
+    </section>
+
+    <section class="featured-instruments">
+      <h2>Featured Instruments</h2>
+      <div class="instrument-cards">
+        <article>
+          <img src="images/djembe.jpg" alt="Djembe drum" loading="lazy">
+          <h3>Djembe</h3>
+          <p>A popular West African drum known for its wide range of tones and rhythms.</p>
+        </article>
+        <article>
+          <img src="images/kora.jpg" alt="Kora" loading="lazy">
+          <h3>Kora</h3>
+          <p>A stringed instrument resembling a lute, originating from the Mandinka people.</p>
+        </article>
+        <article>
+          <img src="images/mbira.jpg" alt="Mbira" loading="lazy">
+          <h3>Mbira</h3>
+          <p>Also known as the thumb piano, this instrument is integral to Zimbabwean music.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> African Musical Instruments | Designed by Stephen Atta Amankwaa</p>
+  </footer>
+
+  <script defer>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

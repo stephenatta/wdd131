@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Stephen Atta Amankwaa's Temple Album for WDD 131 features a responsive photo gallery of nine temples, interactive navigation, and dynamic content using HTML, CSS, and JavaScript.">
+  <meta name="author" content="Stephen Atta Amankwaa"/>
+  <title>Lazy Load Images | WDD 131 | Stephen Atta Amankwaa</title>
+  <link rel="stylesheet" href="styles/lazyload.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+<main>
+  <h1>Lazy Loading Image Demo</h1>
+
+  <img src="https://images.pexels.com/photos/936117/pexels-photo-936117.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2"
+       alt="Portrait of a man wearing sunglasses and jacket"
+       loading="lazy" width="400" height="600">
+
+  <img src="https://images.pexels.com/photos/936014/pexels-photo-936014.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2"
+       alt="Woman in yellow shirt standing by a building"
+       loading="lazy" width="400" height="600">
+
+  <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2"
+       alt="Stylish man in suit leaning on wall"
+       loading="lazy" width="400" height="600">
+
+  <img src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2"
+       alt="Smiling woman in a white top outdoors"
+       loading="lazy" width="400" height="600">
+
+  <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2"
+       alt="Woman with long hair in coat standing on street"
+       loading="lazy" width="400" height="600">
+
+  <img src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2"
+       alt="Man with scarf and sunglasses posing"
+       loading="lazy" width="400" height="600">
+</main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Stephen Atta Amankwaa | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
