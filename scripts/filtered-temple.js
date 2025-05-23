@@ -64,55 +64,40 @@ const temples = [
   }
 ];
 
-const container = document.getElementById("temples-container");
 
-function displayTemples(templeList) {
+// DOM References
+const container = document.querySelector("#temple-container");
+
+function createCard(temple) {
+  const card = document.createElement("div");
+  card.classList.add("temple-card");
+
+  card.innerHTML = `
+    <h2>${temple.templeName}</h2>
+    <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+    <p><strong>Location:</strong> ${temple.location}</p>
+    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+    <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+  `;
+
+  container.appendChild(card);
+}
+
+function displayTemples(filteredTemples) {
   container.innerHTML = "";
-  templeList.forEach(temple => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-
-    card.innerHTML = `
-      <h2>${temple.templeName}</h2>
-      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-      <p><strong>Location:</strong> ${temple.location}</p>
-      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-      <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-    `;
-
-    container.appendChild(card);
-  });
+  filteredTemples.forEach(createCard);
 }
 
-function filterTemples(type) {
-  let filtered = temples;
-  switch (type) {
-    case "old":
-      filtered = temples.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
-      break;
-    case "new":
-      filtered = temples.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
-      break;
-    case "large":
-      filtered = temples.filter(t => t.area > 90000);
-      break;
-    case "small":
-      filtered = temples.filter(t => t.area < 10000);
-      break;
-    default:
-      filtered = temples;
-  }
-  displayTemples(filtered);
-}
+// Event Listeners for filters
+document.querySelector("#home").addEventListener("click", () => displayTemples(temples));
+document.querySelector("#old").addEventListener("click", () => displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() < 1900)));
+document.querySelector("#new").addEventListener("click", () => displayTemples(temples.filter(t => new Date(t.dedicated).getFullYear() > 2000)));
+document.querySelector("#large").addEventListener("click", () => displayTemples(temples.filter(t => t.area > 90000)));
+document.querySelector("#small").addEventListener("click", () => displayTemples(temples.filter(t => t.area < 10000)));
 
-document.getElementById("home").addEventListener("click", () => filterTemples("all"));
-document.getElementById("old").addEventListener("click", () => filterTemples("old"));
-document.getElementById("new").addEventListener("click", () => filterTemples("new"));
-document.getElementById("large").addEventListener("click", () => filterTemples("large"));
-document.getElementById("small").addEventListener("click", () => filterTemples("small"));
-
-displayTemples(temples);
-
-// Footer date info
+// Footer Year and Last Modified
 document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+document.querySelector(".last-modified").textContent = `Last Modified: ${document.lastModified}`;
+
+// Initial Load
+displayTemples(temples);

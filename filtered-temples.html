@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD 131 - Filtered Temple Album by Stephen Atta Amankwaa" />
-  <meta name="author" content="Stephen Atta Amankwaa" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Filtered Temple Album - Stephen Atta Amankwaa</title>
-  <link rel="stylesheet" href="styles/filtered-temples.css" />
-  <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+  <meta name="description" content="Filtered Temple Album for WDD 131 by Stephen Atta Amankwaa. Explore temple images, locations, dates, and square footage with dynamic filtering and modern web technologies.">
+  <meta name="author" content="Stephen Atta Amankwaa">
+
+  <!-- Google Fonts (Roberto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <!-- JavaScript -->
   <script src="scripts/filtered-temple.js" defer></script>
 </head>
+
 <body>
   <header>
     <h1>Filtered Temple Album</h1>
     <nav>
-      <button id="home">Home</button>
-      <button id="old">Old</button>
-      <button id="new">New</button>
-      <button id="large">Large</button>
-      <button id="small">Small</button>
+      <a href="#" id="home">Home</a>
+      <a href="#" id="old">Old</a>
+      <a href="#" id="new">New</a>
+      <a href="#" id="large">Large</a>
+      <a href="#" id="small">Small</a>
     </nav>
   </header>
 
-  <main id="temples-container">
-    <!-- Cards will be inserted here by JavaScript -->
+  <main>
+    <div id="temple-container" class="temple-grid"></div>
   </main>
 
   <footer>
     <p>&copy; <span id="year"></span> Stephen Atta Amankwaa | Ghana</p>
-    <p class="last-modified" id="lastModified"></p>
+    <p class="last-modified"></p>
   </footer>
 </body>
 </html>
