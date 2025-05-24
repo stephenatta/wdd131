@@ -1,8 +1,8 @@
 /* Reset some default styling */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #f4f4f4;
-  color: #2C3E50;
+  background-color: #ffffff;
+  color: #1C1C1C; /* Darkened text for better contrast */
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -10,7 +10,7 @@ body {
 
 header {
   background-color: #2C3E50;
-  color: white;
+  color: #FFFFFF;
   padding: 20px;
   text-align: center;
 }
@@ -22,6 +22,7 @@ header h1 {
 
 .tagline {
   font-style: italic;
+  color: #ffffff; /* Lighter but high-contrast italic subtitle */
 }
 
 main {
@@ -35,7 +36,7 @@ section {
 }
 
 h2 {
-  color: #E67E22;
+  color: #9b4206; /* Darker orange for better contrast */
   font-family: 'Merriweather', serif;
 }
 
@@ -55,7 +56,7 @@ h2 {
 }
 
 .primary-sample {
-  background-color: #E67E22;
+  background-color: #B34700; /* Darker alternative to #E67E22 */
 }
 
 .secondary-sample {
@@ -65,14 +66,14 @@ h2 {
 .wireframe {
   width: 100%;
   max-width: 600px;
-  border: 2px solid #ccc;
+  border: 2px solid #AAAAAA; /* Light gray with good contrast */
   margin-top: 10px;
 }
 
 footer {
   text-align: center;
   background-color: #2C3E50;
-  color: white;
+  color: #FFFFFF;
   padding: 10px;
   font-size: 0.9rem;
 }
