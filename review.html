@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Confirmation</title>
+  <link rel="stylesheet" href="styles/form.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let count = Number(localStorage.getItem("reviewCount")) || 0;
+      count += 1;
+      localStorage.setItem("reviewCount", count);
+      document.getElementById("counter").textContent = count;
+    });
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Thank you for your review!</h1>
+    <p>You have submitted <span id="counter">0</span> reviews.</p>
+  </main>
+</body>
+</html>
