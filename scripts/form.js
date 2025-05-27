@@ -8,10 +8,16 @@ const products = [
 
 document.addEventListener("DOMContentLoaded", () => {
   const select = document.getElementById("product");
-  products.forEach(product => {
-    const option = document.createElement("option");
-    option.value = product.id;
-    option.textContent = product.name;
-    select.appendChild(option);
-  });
+  
+  if (select) {
+    // Optional: Sort alphabetically or by rating
+    products.sort((a, b) => a.name.localeCompare(b.name));
+
+    products.forEach(product => {
+      const option = document.createElement("option");
+      option.value = product.id;
+      option.textContent = `${product.name} (★ ${product.averagerating})`;
+      select.appendChild(option);
+    });
+  }
 });

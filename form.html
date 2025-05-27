@@ -27,7 +27,7 @@
   <main>
     <form method="get" action="review.html">
       <!-- Product Name -->
-      <label for="product">Product Name:</label>
+      <label for="product" class="required">Product Name:</label>
       <select id="product" name="product" required>
         <option value="" disabled selected>Select a Product ...</option>
         <!-- Options inserted via JavaScript -->
@@ -35,7 +35,7 @@
 
       <!-- Overall Rating -->
       <fieldset>
-        <legend>Overall Rating:</legend>
+        <legend class="required">Overall Rating:</legend>
         <label><input type="radio" name="rating" id="rate1" value="1" required /> 1 ☆</label>
         <label><input type="radio" name="rating" id="rate2" value="2" /> 2 ☆☆</label>
         <label><input type="radio" name="rating" id="rate3" value="3" /> 3 ☆☆☆</label>
@@ -44,7 +44,7 @@
       </fieldset>
 
       <!-- Date of Installation -->
-      <label for="install-date">Date of Installation:</label>
+      <label for="install-date" class="required">Date of Installation:</label>
       <input type="date" id="install-date" name="install-date" required />
 
       <!-- Useful Features -->
@@ -65,7 +65,7 @@
       <input type="text" id="username" name="username" />
 
       <!-- Submit -->
-      <input type="submit" value="Submit" />
+      <input type="submit" value="submit" />
     </form>
   </main>
 
