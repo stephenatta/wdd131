@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #2a2a72;
+  background-color: #0c0c47;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -22,17 +22,17 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: 0c0c47;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  background-color: #1598a1;
+  background-color: #ecc203;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #0077cc;
-  color: #fff;
+  background-color: #fa86ea;
+  color: #000000;
 }
 
 main {
@@ -64,7 +64,7 @@ main {
 }
 
 footer {
-  background-color: #2a2a72;
+  background-color: #0c0c47;
   color: white;
   text-align: center;
   padding: 1rem;
