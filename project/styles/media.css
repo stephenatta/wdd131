@@ -1,0 +1,78 @@
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo-container {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+    background-color: #E67E22;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-toggle:hover {
+    background-color: #cf5e05;
+  }
+
+  nav {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    flex-direction: column;
+    transition: max-height 0.4s ease;
+  }
+
+  nav.expanded {
+    max-height: 500px; /* enough to show all links */
+  }
+
+  nav a {
+    padding: 1rem;
+    display: block;
+    text-align: left;
+    border-top: 1px solid #444;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #E67E22;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}

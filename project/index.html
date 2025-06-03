@@ -1,75 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore traditional African musical instruments and their cultural significance.">
-  <meta name="author" content="Stephen Atta Amankwaa">
-  <title>African Musical Instruments | Site Plan</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/siteplan.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WDD 131 – Dynamic Web Fundamentals - Stephen Amankwaa Atta</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Stephen Amankwaa Atta, African musical instruments, culture, traditional sounds" />
+  <meta name="author" content="Stephen Amankwaa Atta" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/media.css" />
+  <script src="scripts/main.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>African Musical Instruments</h1>
-    <p class="tagline">Celebrating the Rhythm of African Culture</p>
+    <div class="logo-container">
+      <img src="images/logo.jpg" alt="African Musical Instruments Logo" class="logo" />
+      <h1>African Musical Instruments</h1>
+      <!-- Hamburger button -->
+<button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+    
+    <!-- Collapsible nav -->
+    <nav class="collapsed">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="instruments.html">Instruments</a>
+      <a href="#" aria-disabled="true">Final Project</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Site Name</h2>
-      <p><strong>Name:</strong> African Musical Instruments</p>
-      <p>This name captures the cultural essence and musical heritage of Africa. It was chosen to reflect the subject matter clearly and be easy to remember.</p>
+  <div class="hero">
+    <img src="images/hero.jpg" alt="Hero Image" />
+  </div>
+
+<main>
+  <section class="card">
+  <h2>Audio Sampler</h2>
+  <p>Experience the distinct sounds of traditional African instruments. This short audio mix gives you a taste of the balafon, djembe, and mbira.</p>
+  <audio controls>
+    <source src="audio/african_sampler.wav" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+<section class="card">
+  <h2>Introductory Video</h2>
+  <p>Watch this short video to learn about the cultural role of music and instruments in African traditions.</p>
+  <video controls width="100%" poster="images/video-thumbnail.jpg">
+    <source src="video/african_music_intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+
+    <section class="card">
+      <h2>About Us</h2>
+      <p>This site is dedicated to showcasing traditional African musical instruments, educating visitors about their origins, sounds, and cultural relevance. Whether you're a musician, student, or just curious, you're in the right place to explore the rich rhythm of Africa.</p>
+      <a href="about.html" class="button">Learn More</a>
     </section>
 
-    <section>
-      <h2>Site Purpose</h2>
-      <p>This site is dedicated to showcasing traditional African musical instruments, educating visitors about their origins, sound, and cultural relevance. It serves musicians, educators, students, and anyone interested in African culture.</p>
-    </section>
-
-    <section>
-      <h2>Scenarios</h2>
-      <ul>
-        <li>Which traditional instruments are popular in West Africa?</li>
-        <li>How does the djembe drum sound and where did it originate?</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Color Schema</h2>
-      <p><strong>Primary Color:</strong> #E67E22 (used for headings and highlights)</p>
-      <p><strong>Secondary Color:</strong> #2C3E50 (used for backgrounds and nav bars)</p>
-      <div class="color-samples">
-        <div class="primary-sample">Primary</div>
-        <div class="secondary-sample">Secondary</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Typography</h2>
-      <p><strong>Heading Font:</strong> 'Merriweather', serif (used for main titles and headers)</p>
-      <p><strong>Body Font:</strong> 'Open Sans', sans-serif (used for body text and navigation)</p>
-    </section>
-
-    <section>
-      <h2>Wireframes</h2>
-      <p>Below are the wireframe sketches for the homepage:</p>
-      <h3>Mobile View</h3>
-      <img src="images/wireframe-mobile.png" alt="Mobile wireframe" class="wireframe">
-
-      <h3>Desktop View</h3>
-      <img src="images/wireframe-desktop.png" alt="Desktop wireframe" class="wireframe">
+    <section class="card">
+      <h2>Explore Instruments</h2>
+      <img src="images/djembe.jpg" alt="Djembe Drum" />
+      <p>Discover a variety of traditional instruments like the djembe, kora, mbira, balafon, and more. Each instrument tells a story and plays a key role in African music and community life.</p>
+      <a href="instruments.html" class="button">View Instruments</a>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 African Musical Instruments | BYU-Idaho WDD 131</p>
+    <p>&copy; <span id="currentyear"></span> Stephen Amankwaa Atta | Ghana</p>
+    <p id="lastModified"></p>
   </footer>
 </body>
 </html>
