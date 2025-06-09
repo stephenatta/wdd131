@@ -171,6 +171,13 @@ main {
   transform: scale(1.02);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+/* Make video responsive */
+.responsive-video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
 
 @media (min-width: 768px) {
   main {
